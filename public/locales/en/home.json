@@ -3,29 +3,29 @@
     "title": "Human Rights Education Database in Brazil",
     "description": "The Human Rights Education in Brazil database presents information on Brazilian states and the federal government."
   },
-  "title": "Panorama da EDH no Brasil: Banco de Dados",
-  "subtitle": "Clique nos estados para obter mais detalhes",
+  "title": "Overview of Human Rights Education in Brazil: Database",
+  "subtitle": "Click on the states for more details",
   "legend": {
     "title": "Current degree of institutionalization of Human Rights Education (HRE)",
-    "high": "Alto",
-    "medium": "Médio",
-    "low": "Baixo",
-    "none": "Nenhum",
-    "no_info": "Não foi possível constatar"
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "none": "None",
+    "no_info": "Unable to assess"
   },
   "category": {
     "document": "Guiding document",
-    "collegiate": "Collegiate body of HRE",
-    "govern": "Governing body of HRE"
+    "collegiate": "HRE collegiate body",
+    "govern": "HRE government department"
   },
   "popup": {
     "expanded": {
-      "orgao__nome": "Government Bodies",
+      "orgao__nome": "Government departments",
       "orgao__orcamento": "Budget",
-      "orgao__conceito_edh": "Concept",
-      "orgao__temas_principais": "Main Topics",
-      "orgao__atividades_principais": "HRE Policies",
-      "orgao__edh_plano_educacao": "Education Plans for HRE",
+      "orgao__conceito_edh": "HRE concept",
+      "orgao__temas_principais": "Main themes",
+      "orgao__atividades_principais": "Main activities",
+      "orgao__edh_plano_educacao": "HRE in the education state plan",
       "orgao__equipe_edh": "HRE Team"
     },
     "icons": {
@@ -47,17 +47,17 @@
   "timeline": {
     "title": "Federal Government Timeline"
   },
-  "research": "Quer saber mais como a pesquisa foi desenvolvida?",
-  "resources": "Para baixar outros materiais",
-  "clickLink": "clique aqui.",
-  "accessLink": "acesse o link.",
+  "research": "Would you like to know more about how the research was conducted?",
+  "resources": "To download other materials,",
+  "clickLink": "Click here.",
+  "accessLink": "acess the link.",
   "methodologyPopup": {
     "title": "Metodologia",
-    "description": "Para traçar o panorama da Educação em Direitos Humanos no Brasil, a pesquisa foi dividida em duas etapas. Na primeira, buscou-se compreender a institucionalização em nível federal, recorrendo às informações atreladas ao Ministério da Mulher, da Família e Direitos Humanos onde está a pasta de EDH; na segunda, foram analisados os estados brasileiros com a intenção de compreender em que medida a EDH está institucionalizada em cada localidade. As informações foram coletadas considerando-se dois biênios: 2019-2020 e 2021-2022. A pesquisa foi realizada por meio de informações disponibilizadas em sites oficiais, por e-mail e por telefone. As informações sobre os estados apresentadas neste infográfico correspondem ao segundo biênio. Para dados detalhadas de cada estado, faça o",
-    "link": "download dos materiais no link."
+    "description": "To outline the overview of Human Rights Education (HRE) in Brazil, the research was divided into two stages. In the first stage, we sought to understand the institutionalization of HRE at the federal level, using information linked to the Ministry of Women, Family, and Human Rights where the HRE portfolio is located. In the second stage, we analyzed the Brazilian states with the intention of understanding the extent to which HRE is institutionalized in each location. Information was collected considering two bienniums: 2019-2020 and 2021-2022. The research was conducted using information available on official websites, via email, and by telephone. The information on states presented in this infographic corresponds to the second biennium. For detailed data on each state,",
+    "link": "download the materials at the link."
   },
   "comparison": {
-    "title": "Comparison of Human Development Education across states",
+    "title": "Comparison of Human Rights Education between states",
     "subtitle": "Select 2 or 3 states to compare; then choose which parameters to compare.",
     "select": {
       "placeholder": "Add a state"
