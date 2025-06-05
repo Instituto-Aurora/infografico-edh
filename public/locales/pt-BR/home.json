@@ -3,7 +3,7 @@
     "title": "Banco de dados da Educação em Direitos Humanos no Brasil",
     "description": "O banco de dados da Educação em Direitos Humanos no Brasil apresenta informações sobre os estados brasileiros e o governo federal."
   },
-  "title": "Panorama da EDH no Brasil: Banco de Dados",
+  "title": "Panorama da Educação em Direitos Humanos no Brasil: Banco de Dados",
   "subtitle": "Clique nos estados para obter mais detalhes",
   "legend": {
     "title": "Grau atual de institucionalização da Educação em Direitos Humanos (EDH)",
@@ -20,11 +20,11 @@
   },
   "popup": {
     "expanded": {
-      "orgao__nome": "Orgãos",
+      "orgao__nome": "Orgãos de governo",
       "orgao__orcamento": "Orçamento",
-      "orgao__conceito_edh": "Conceito",
+      "orgao__conceito_edh": "Conceito de EDH",
       "orgao__temas_principais": "Temas principais",
-      "orgao__atividades_principais": "Políticas de EDH",
+      "orgao__atividades_principais": "Atividades principais",
       "orgao__edh_plano_educacao": "EDH nos planos de educação",
       "orgao__equipe_edh": "Equipe de EDH"
     },
@@ -45,11 +45,11 @@
   },
   "loading": "Carregando...",
   "timeline": {
-    "title": "Timeline do Governo Federal"
+    "title": "Linha do tempo do Governo Federal"
   },
-  "research": "Quer saber mais como a pesquisa foi desenvolvida?",
+  "research": "Quer saber mais sobre como a pesquisa foi desenvolvida?",
   "resources": "Para baixar outros materiais",
-  "clickLink": "clique aqui.",
+  "clickLink": "Clique aqui.",
   "accessLink": "acesse o link.",
   "methodologyPopup": {
     "title": "Metodologia",
