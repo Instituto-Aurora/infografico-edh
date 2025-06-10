@@ -58,13 +58,19 @@ function ComparisonHeader({
 export default function ComparisonCard({
   state,
   setSelectedState,
+  selectedPeriod,
 }: {
   state: StatesResponse;
   setSelectedState: React.Dispatch<React.SetStateAction<string | null>>;
+  selectedPeriod: string;
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const degree = state.estado_basico__grau_institucionalizacao;
   const gradient = INFO_ACCESS[degree];
+  const filteredState = {
+    ...state,
+    orgaos: state.orgaos?.filter((orgao) => orgao.periodo === selectedPeriod),
+  };
 
   return (
     <GridItem h={"3xl"}>
@@ -85,15 +91,15 @@ export default function ComparisonCard({
         <Box py={5} px={2} overflowY={"scroll"} h={"2xl"}>
           <StateInfo
             gradient={gradient}
-            stateInfo={state}
+            stateInfo={filteredState}
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
           />
         </Box>
 
-        {state.orgaos && state.orgaos.length > 1 ? (
+        {filteredState.orgaos && filteredState.orgaos.length > 1 ? (
           <Flex
-            bgColor={"white"}
+            bgColor={""}
             w={"full"}
             h={"2.5rem"}
             align={"center"}

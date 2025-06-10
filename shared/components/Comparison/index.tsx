@@ -19,9 +19,11 @@ type Option = {
 
 type ComparisonCardsProps = {
   tableData: StatesResponse[];
+  selectedPeriod: string;
 };
 
-function ComparisonCards({ tableData }: ComparisonCardsProps) {
+function ComparisonCards({ tableData, selectedPeriod }: ComparisonCardsProps) {
+  console.log("tableData:", tableData);
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [state, setState] = useState<StatesResponse | null>(null);
   const { t } = useTranslation("home");
@@ -45,7 +47,11 @@ function ComparisonCards({ tableData }: ComparisonCardsProps) {
   }, [selectedState]);
 
   return state ? (
-    <ComparisonCard state={state} setSelectedState={setSelectedState} />
+    <ComparisonCard
+      state={state}
+      setSelectedState={setSelectedState}
+      selectedPeriod={selectedPeriod}
+    />
   ) : (
     <GridItem>
       <Flex
@@ -89,8 +95,10 @@ const ControlSecrearyLineItem = styled.div<{ secretaryList: string[] }>`
 
 export default function Comparison({
   tableData,
+  selectedPeriod,
 }: {
   tableData: StatesResponse[];
+  selectedPeriod: string;
 }) {
   const { t } = useTranslation("home");
   const [secretaryList, setSecretaryInfoList] = useState<string[]>([]);
@@ -124,6 +132,9 @@ export default function Comparison({
       return setSecretaryInfoList([]);
     },
     [multiSelectInfo]
+  );
+  const filteredData = tableData.filter(
+    (row) => row.periodo === selectedPeriod
   );
 
   return (
@@ -166,7 +177,8 @@ export default function Comparison({
           {[...Array(3).keys()].map((i) => (
             <ComparisonCards
               key={`placeholder-card-${i}`}
-              tableData={tableData}
+              tableData={filteredData}
+              selectedPeriod={selectedPeriod}
             />
           ))}
         </Grid>
