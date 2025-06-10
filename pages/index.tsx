@@ -28,8 +28,10 @@ export default function Home({
 }) {
   const { t } = useTranslation("home");
 
-  const periodsDistinct = getDistinct(tableData, "periodo");
-  const [selectedPeriod, selectPeriod] = useState<string>(periodsDistinct[0]);
+  const periodsDistinct = getDistinct(tableData, "periodo").sort();
+  const [selectedPeriod, selectPeriod] = useState<string>(
+    periodsDistinct[periodsDistinct.length - 1]
+  );
 
   return (
     <>
@@ -80,7 +82,7 @@ export default function Home({
         <Research />
       </Box>
       <Box pt={10} w={"full"}>
-        <Comparison tableData={tableData} />
+        <Comparison tableData={tableData} selectedPeriod={selectedPeriod} />
       </Box>
     </>
   );
