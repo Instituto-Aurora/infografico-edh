@@ -40,6 +40,11 @@ const ICON_ITEMS = (
     status: stateInfo.estado_basico__orgao_publico,
     MainIcon: DocumentTextIcon,
   },
+  {
+    label: t("category.transparency"),
+    status: stateInfo.estado_basico__transparencia,
+    MainIcon: DocumentTextIcon,
+  },
 ];
 export default function StateInfo({
   stateInfo,

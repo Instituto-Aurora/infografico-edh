@@ -38,6 +38,10 @@ const POPUP_ITEMS = (
     status: stateInfo.estado_basico__orgao_publico,
     category: t("category.govern"),
   },
+  {
+    status: stateInfo.estado_basico__transparencia,
+    category: t("category.transparency"),
+  },
 ];
 
 export function PopupContent({

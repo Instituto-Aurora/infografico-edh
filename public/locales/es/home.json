@@ -16,7 +16,8 @@
   "category": {
     "document": "Documento guía",
     "collegiate": "Órganos colegiados de la EDH",
-    "govern": "Órganos de gobierno de la EDH"
+    "govern": "Órganos de gobierno de la EDH",
+    "transparency": "Transparencia de la información"
   },
   "popup": {
     "expanded": {
@@ -52,8 +53,8 @@
   "clickLink": "clic aquí.",
   "accessLink": "acceda al enlace.",
   "methodologyPopup": {
-    "title": "Metodologia",
-    "description": "Para perfilar el panorama de la Educación en Derechos Humanos en Brasil, la investigación se dividió en dos etapas. En el primero buscamos comprender la institucionalización a nivel federal, utilizando información vinculada a la Secretaría de la Mujer, Familia y Derechos Humanos donde se ubica la cartera de la EDH; en el segundo, se analizaron los estados brasileños con la intención de comprender en qué medida la EDH está institucionalizada en cada localidad. Las informaciones fueron recolectadas considerando los bienios 2019-2020 y 2021-2022. La investigación se realizó utilizando informaciones disponibles en sitios web oficiales, por correo electrónico y por teléfono. Las informaciones de los estados presentadas en esta infografía corresponden al segundo bienio. Para obtener datos detallados de cada estado,",
+    "title": "Metodología",
+    "description": "Para trazar el panorama de la Educación en Derechos Humanos (EDH) en Brasil, la investigación se dividió en dos etapas. En la primera, se buscó comprender la institucionalización de la política pública federal, recurriendo a información de los ministerios responsables de la EDH; en la segunda, se analizaron los estados brasileños con el objetivo de entender en qué medida la EDH está institucionalizada en cada localidad. La información fue recolectada de forma bienal (2019-2020, 2021-2022, 2023-2024, y así sucesivamente). La investigación se realizó a partir de entrevistas y de información disponible en sitios web oficiales, por correo electrónico, por teléfono y mediante solicitudes de acceso a la información, de acuerdo con la Ley n.º 12.527/11. Para obtener datos detallados de cada estado,",
     "link": "descargue los materiales en el enlace."
   },
   "comparison": {

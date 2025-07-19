@@ -16,7 +16,8 @@
   "category": {
     "document": "Guiding document",
     "collegiate": "HRE collegiate body",
-    "govern": "HRE government department"
+    "govern": "HRE government department",
+    "transparency": "Information transparency"
   },
   "popup": {
     "expanded": {
@@ -52,8 +53,8 @@
   "clickLink": "Click here.",
   "accessLink": "acess the link.",
   "methodologyPopup": {
-    "title": "Metodologia",
-    "description": "To outline the overview of Human Rights Education (HRE) in Brazil, the research was divided into two stages. In the first stage, we sought to understand the institutionalization of HRE at the federal level, using information linked to the Ministry of Women, Family, and Human Rights where the HRE portfolio is located. In the second stage, we analyzed the Brazilian states with the intention of understanding the extent to which HRE is institutionalized in each location. Information was collected considering two bienniums: 2019-2020 and 2021-2022. The research was conducted using information available on official websites, via email, and by telephone. The information on states presented in this infographic corresponds to the second biennium. For detailed data on each state,",
+    "title": "Methodology",
+    "description": "To outline the overview of Human Rights Education (HRE) in Brazil, the research was divided into two stages. In the first stage, we sought to understand the institutionalization of HRE at the federal level, using information from the ministries responsible for HRE. In the second stage, we analyzed the Brazilian states to assess the extent to which HRE is institutionalized in each location. Data were collected biennially (2019–2020, 2021–2022, 2023–2024, and so on). The research was conducted through interviews and information obtained from official websites, emails, phone calls, and freedom of information requests — in accordance with Law No. 12.527/11. For detailed data on each state,",
     "link": "download the materials at the link."
   },
   "comparison": {
