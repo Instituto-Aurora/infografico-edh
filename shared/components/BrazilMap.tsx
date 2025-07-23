@@ -40,6 +40,7 @@ export default function BrazilMap({
   const [lng] = useState(-53.4176);
   const [lat] = useState(-14.6196);
   const [zoom] = useState(3.43);
+  const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
 
   function setDefaultLayers(map: Map) {
     map.addLayer({
@@ -121,24 +122,29 @@ export default function BrazilMap({
 
   function includePopups(map: Map) {
     map.on("click", "state-fills", (e: any) => {
-      const labels = e.features.map((feature: Feature) => {
-        return (
-          <PopupContent
-            key={feature.properties.id}
-            label={feature.properties.name}
-            stateInfo={getStateInfo({
-              tableData,
-              feature,
-              selectedPeriod,
-            })}
-          />
-        );
-      });
-
-      setContent(labels);
+      const feature = e.features[0] as Feature;
+      setSelectedFeature(feature);
       setPopupLngLat(e.lngLat);
     });
   }
+  useEffect(() => {
+    if (selectedFeature && popupLngLat) {
+      const stateInfo = getStateInfo({
+        tableData,
+        feature: selectedFeature,
+        selectedPeriod,
+      });
+
+      setContent(
+        <PopupContent
+          key={selectedFeature.properties.id + selectedPeriod}
+          label={selectedFeature.properties.name}
+          stateInfo={stateInfo}
+          selectedPeriod={selectedPeriod}
+        />
+      );
+    }
+  }, [selectedFeature, popupLngLat, selectedPeriod, tableData]);
 
   useEffect(() => {
     if (map) return;

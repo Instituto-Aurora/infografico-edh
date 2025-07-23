@@ -44,7 +44,7 @@ function ComparisonCards({ tableData, selectedPeriod }: ComparisonCardsProps) {
   useEffect(() => {
     const findState = tableData.find((t) => t.estado__nome === selectedState);
     setState(findState || null);
-  }, [selectedState]);
+  }, [selectedState, tableData]);
 
   return state ? (
     <ComparisonCard

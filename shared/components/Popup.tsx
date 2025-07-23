@@ -47,9 +47,11 @@ const POPUP_ITEMS = (
 export function PopupContent({
   label,
   stateInfo,
+  selectedPeriod,
 }: {
   label: string;
   stateInfo?: StatesResponse;
+  selectedPeriod: string;
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation("home");
@@ -122,7 +124,12 @@ export function PopupContent({
           </List>
         </Box>
       </Box>
-      <ExpandedPopup onClose={onClose} isOpen={isOpen} stateInfo={stateInfo} />
+      <ExpandedPopup
+        onClose={onClose}
+        isOpen={isOpen}
+        stateInfo={stateInfo}
+        selectedPeriod={selectedPeriod}
+      />
     </>
   );
 }

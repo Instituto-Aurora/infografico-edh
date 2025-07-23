@@ -62,7 +62,13 @@ export default function StateInfo({
 
   return (
     <VStack spacing={8} overflow={"hidden"}>
-      <HStack justify={"space-around"} color={"brand.primary"} spacing={16}>
+      <HStack
+        justify={"space-around"}
+        color={"brand.primary"}
+        w="full"
+        spacing={4}
+        flexWrap="nowrap"
+      >
         {ICON_ITEMS(t, stateInfo).map(
           ({ label, status, documentName, collegiateName, MainIcon }) => (
             <IconWithEmoji
