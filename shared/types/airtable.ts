@@ -11,6 +11,8 @@ export type StatesFields = {
   estado_basico__orgao_publico: string;
   estado_basico__transparencia: string;
   periodo: string;
+  quadrienio_periodo: string;
+  quadrienio: string;
   orgaos?: OrgaosFields[];
 };
 

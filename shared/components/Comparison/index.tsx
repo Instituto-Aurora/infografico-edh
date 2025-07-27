@@ -136,7 +136,27 @@ export default function Comparison({
   const filteredData = tableData.filter(
     (row) => row.periodo === selectedPeriod
   );
+  const quadrienio = filteredData[0]?.quadrienio ?? "";
 
+  const isComparisonAvailable = filteredData.some(
+    (row) => row.quadrienio_periodo === "fim"
+  );
+  if (!isComparisonAvailable) {
+    return (
+      <Flex align="center" direction="column" textAlign="center" px={4}>
+        <Heading size="lg" color="brand.primary" pb={4}>
+          {t("comparison.title")}
+        </Heading>
+        <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          O quadro comparativo de indicadores estará disponível apenas nos dois
+          últimos anos de cada quadriênio.
+          <br />
+          <br />
+          <strong>Quadriênio atual:</strong> {quadrienio}
+        </Text>
+      </Flex>
+    );
+  }
   return (
     <Flex align={"center"} direction={"column"}>
       <Box w={{ base: "full", xl: "6xl" }} mb={8}>
