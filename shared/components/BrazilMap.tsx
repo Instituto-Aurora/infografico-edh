@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl, { Map } from "mapbox-gl";
 import { Box } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
 import PopupBase, { PopupContent } from "./Popup";
 import Legend from "./Legend";
@@ -35,7 +36,7 @@ export default function BrazilMap({
 
   const mapContainer = useRef(null);
   const [map, setMap] = useState<Map | null>(null);
-  const [content, setContent] = useState(null);
+  const [content, setContent] = useState<ReactNode>(null);
   const [popupLngLat, setPopupLngLat] = useState(null);
   const [lng] = useState(-53.4176);
   const [lat] = useState(-14.6196);
