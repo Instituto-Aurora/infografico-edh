@@ -60,6 +60,8 @@
   "comparison": {
     "title": "Comparación de la Educación em Derechos Humanos entre estados",
     "subtitle": "Seleccione 2 o 3 estados para comparar; luego elija qué parámetros comparar.",
+    "quadrenniumRule": "El cuadro comparativo de indicadores está disponible solo en los dos últimos años de cada cuatrienio.",
+    "quadrennium": "Cuatrienio actual:",
     "select": {
       "placeholder": "Agregue um estado"
     },

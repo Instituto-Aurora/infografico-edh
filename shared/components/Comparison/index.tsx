@@ -136,6 +136,8 @@ export default function Comparison({
   const filteredData = tableData.filter(
     (row) => row.periodo === selectedPeriod
   );
+  console.log("filteredData", filteredData);
+
   const quadrienio = filteredData[0]?.quadrienio ?? "";
 
   const isComparisonAvailable = filteredData.some(
@@ -148,21 +150,24 @@ export default function Comparison({
           {t("comparison.title")}
         </Heading>
         <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
-          O quadro comparativo de indicadores estará disponível apenas nos dois
-          últimos anos de cada quadriênio.
+          <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
           <br />
           <br />
-          <strong>Quadriênio atual:</strong> {quadrienio}
+          {t("comparison.quadrenniumRule")}
         </Text>
       </Flex>
     );
   }
   return (
-    <Flex align={"center"} direction={"column"}>
+    <Flex align={"center"} direction={"column"} textAlign="center" px={4}>
       <Box w={{ base: "full", xl: "6xl" }} mb={8}>
         <Heading size={"lg"} color={"brand.primary"} pb={4}>
           {t("comparison.title")}
         </Heading>
+        <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
+          <br />
+        </Text>
         <Text fontSize={"xl"} fontWeight={300} color={"brand.primary"} pb={8}>
           {t("comparison.subtitle")}
         </Text>
