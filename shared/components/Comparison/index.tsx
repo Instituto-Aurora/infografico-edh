@@ -151,7 +151,7 @@ export default function Comparison({
         </Heading>
         <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
           <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
-          <br></br>
+          {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
           <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
           <br></br>
           {t("comparison.quadrenniumRule")}
@@ -167,7 +167,7 @@ export default function Comparison({
         </Heading>
         <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
           <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
-          <br></br>
+          {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
           <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
         </Text>
         <Text fontSize={"xl"} fontWeight={300} color={"brand.primary"} pb={8}>
