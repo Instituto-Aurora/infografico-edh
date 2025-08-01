@@ -60,6 +60,7 @@
   "comparison": {
     "title": "Comparison of Human Rights Education between states",
     "subtitle": "Select 2 or 3 states to compare; then choose which parameters to compare.",
+    "selectedPeriod": "Selected analysis period:",
     "quadrenniumRule": "The comparative indicators table is available only for the last two years of each quadrennium.",
     "quadrennium": "Current quadrennium:",
     "select": {

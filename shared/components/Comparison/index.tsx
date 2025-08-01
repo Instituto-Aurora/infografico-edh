@@ -150,9 +150,10 @@ export default function Comparison({
           {t("comparison.title")}
         </Heading>
         <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
+          <br></br>
           <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
-          <br />
-          <br />
+          <br></br>
           {t("comparison.quadrenniumRule")}
         </Text>
       </Flex>
@@ -165,8 +166,9 @@ export default function Comparison({
           {t("comparison.title")}
         </Heading>
         <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
+          <br></br>
           <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
-          <br />
         </Text>
         <Text fontSize={"xl"} fontWeight={300} color={"brand.primary"} pb={8}>
           {t("comparison.subtitle")}
