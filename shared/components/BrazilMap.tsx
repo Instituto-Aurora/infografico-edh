@@ -187,7 +187,7 @@ export default function BrazilMap({
 
       setCurrentTableData(updatedFilteredTableData);
     }
-  }, [selectedPeriod]);
+  }, [map, tableData, selectedPeriod]);
 
   return (
     <Box as="section" width={{ base: "100%", xl: "unset" }}>
