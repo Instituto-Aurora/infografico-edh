@@ -154,6 +154,7 @@ export default function Comparison({
           {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
           <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
           <br></br>
+          <br></br>
           {t("comparison.quadrenniumRule")}
         </Text>
       </Flex>
