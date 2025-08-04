@@ -44,7 +44,7 @@ function ComparisonCards({ tableData, selectedPeriod }: ComparisonCardsProps) {
   useEffect(() => {
     const findState = tableData.find((t) => t.estado__nome === selectedState);
     setState(findState || null);
-  }, [selectedState]);
+  }, [selectedState, tableData]);
 
   return state ? (
     <ComparisonCard
@@ -136,13 +136,41 @@ export default function Comparison({
   const filteredData = tableData.filter(
     (row) => row.periodo === selectedPeriod
   );
+  console.log("filteredData", filteredData);
 
+  const quadrienio = filteredData[0]?.quadrienio ?? "";
+
+  const isComparisonAvailable = filteredData.some(
+    (row) => row.quadrienio_periodo === "fim"
+  );
+  if (!isComparisonAvailable) {
+    return (
+      <Flex align="center" direction="column" textAlign="center" px={4}>
+        <Heading size="lg" color="brand.primary" pb={4}>
+          {t("comparison.title")}
+        </Heading>
+        <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
+          {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
+          <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
+          <br></br>
+          <br></br>
+          {t("comparison.quadrenniumRule")}
+        </Text>
+      </Flex>
+    );
+  }
   return (
-    <Flex align={"center"} direction={"column"}>
+    <Flex align={"center"} direction={"column"} textAlign="center" px={4}>
       <Box w={{ base: "full", xl: "6xl" }} mb={8}>
         <Heading size={"lg"} color={"brand.primary"} pb={4}>
           {t("comparison.title")}
         </Heading>
+        <Text fontSize="xl" fontWeight={300} color="brand.primary" pb={8}>
+          <strong>{t("comparison.selectedPeriod")}</strong> {selectedPeriod}
+          {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
+          <strong>{t("comparison.quadrennium")}</strong> {quadrienio}
+        </Text>
         <Text fontSize={"xl"} fontWeight={300} color={"brand.primary"} pb={8}>
           {t("comparison.subtitle")}
         </Text>

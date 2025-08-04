@@ -16,7 +16,8 @@
   "category": {
     "document": "Documento guía",
     "collegiate": "Órganos colegiados de la EDH",
-    "govern": "Órganos de gobierno de la EDH"
+    "govern": "Órganos de gobierno de la EDH",
+    "transparency": "Transparencia de la información"
   },
   "popup": {
     "expanded": {
@@ -52,13 +53,16 @@
   "clickLink": "clic aquí.",
   "accessLink": "acceda al enlace.",
   "methodologyPopup": {
-    "title": "Metodologia",
-    "description": "Para perfilar el panorama de la Educación en Derechos Humanos en Brasil, la investigación se dividió en dos etapas. En el primero buscamos comprender la institucionalización a nivel federal, utilizando información vinculada a la Secretaría de la Mujer, Familia y Derechos Humanos donde se ubica la cartera de la EDH; en el segundo, se analizaron los estados brasileños con la intención de comprender en qué medida la EDH está institucionalizada en cada localidad. Las informaciones fueron recolectadas considerando los bienios 2019-2020 y 2021-2022. La investigación se realizó utilizando informaciones disponibles en sitios web oficiales, por correo electrónico y por teléfono. Las informaciones de los estados presentadas en esta infografía corresponden al segundo bienio. Para obtener datos detallados de cada estado,",
-    "link": "descargue los materiales en el enlace."
+    "title": "Metodología",
+    "description": "Para trazar el panorama de la política pública de Educación en Derechos Humanos (EDH) en Brasil, recopilamos información de los ministerios responsables por la EDH y analizamos cada uno de los estados y el Distrito Federal para comprender en qué medida la EDH está institucionalizada en el país. La información sobre los grados de institucionalización presentada en el mapa interactivo —como la existencia de documentos orientadores, órganos colegiados y organismos gubernamentales dedicados a la EDH— fue recolectada de forma bienal (en 2019-2020, 2021- 2022, 2023-2024 y así sucesivamente). Los datos detallados que se muestran al hacer clic en los estados — presupuesto, definiciones, temas, etc.— fueron recolectados cada cuatro años, al final del período de mandato de los gobiernos vigentes (en 2022, 2024, y así en adelante). La investigación se realizó mediante entrevistas e información disponible en sitios web oficiales, por correo electrónico, por teléfono y a través de solicitudes de acceso a la información, de acuerdo con la Ley N.º 12.527/11. Cabe destacar que la metodología de la investigación ha sido perfeccionada en cada edición y, por lo tanto, a lo largo de los bienios, existen variaciones en el grado de institucionalización que no implican necesariamente un avance en la política pública de EDH, sino una mejora en los instrumentos de recolección de datos utilizados por el Instituto Aurora. Para acceder a los datos detallados de cada estado y a una descripción completa de las metodologías utilizadas,",
+    "link": "descargue los materiales en el enlace indicado."
   },
   "comparison": {
     "title": "Comparación de la Educación em Derechos Humanos entre estados",
     "subtitle": "Seleccione 2 o 3 estados para comparar; luego elija qué parámetros comparar.",
+    "selectedPeriod": "Período de análisis seleccionado:",
+    "quadrenniumRule": "El cuadro comparativo de indicadores está disponible solo en los dos últimos años de cada cuatrienio.",
+    "quadrennium": "Cuatrienio actual:",
     "select": {
       "placeholder": "Agregue um estado"
     },

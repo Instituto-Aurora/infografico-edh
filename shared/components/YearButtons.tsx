@@ -1,6 +1,6 @@
-import { HStack, Button } from "@chakra-ui/react";
-import { css } from "@emotion/react";
+import { Select } from "@chakra-ui/react";
 import { type Dispatch, type SetStateAction } from "react";
+import { css } from "@emotion/react";
 
 type YearButtonsProp = {
   years: string[];
@@ -14,32 +14,30 @@ export default function YearButtons({
   selectPeriod,
 }: YearButtonsProp) {
   return years.length > 0 ? (
-    <HStack
-      boxShadow={"lg"}
-      css={
-        years.length > 1 &&
-        css`
-          & > button:first-of-type {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-          }
-          & > button:last-child {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-          }
-        `
-      }
+    <Select
+      value={selectedPeriod}
+      onChange={(e) => selectPeriod(e.target.value)}
+      maxW="200px"
+      fontSize="lg"
+      fontWeight="bold"
+      bgColor="#62426E"
+      color="#F4F0EF"
+      borderColor="#F4F0EF"
+      borderWidth="2px"
+      borderRadius="md"
+      _hover={{ bgColor: "#7D5A89" }}
+      css={css`
+        option {
+          background-color: rgb(255, 255, 255);
+          color: #62426e;
+        }
+      `}
     >
-      {years.map((label, i) => (
-        <Button
-          key={`years-button-${i}`}
-          onClick={() => selectPeriod(label)}
-          variant={"custom"}
-          colorScheme={label === selectedPeriod ? "selected" : "disabled"}
-        >
-          {label}
-        </Button>
+      {years.map((year, i) => (
+        <option key={`year-option-${i}`} value={year}>
+          {year}
+        </option>
       ))}
-    </HStack>
+    </Select>
   ) : null;
 }

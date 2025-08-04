@@ -91,7 +91,7 @@ function SecretaryContentLineItem({
           {title}:
         </Text>
       </GridItem>
-      <Box height={"100%"} position={"absolute"} left={"125px"}>
+      <Box height={"100%"} position={"absolute"} left={"140px"}>
         <Divider
           border={"1px solid"}
           borderColor={"brand.primary"}
@@ -143,7 +143,7 @@ function SecretaryContentItem({
   return (
     <Grid
       position={"relative"}
-      gridTemplateColumns={"100px 13.5rem"}
+      gridTemplateColumns={"115px 13.5rem"}
       gridTemplateRows={"1fr"}
       columnGap={5}
       rowGap={5}

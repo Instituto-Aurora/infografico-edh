@@ -11,7 +11,9 @@ export default function getStateInfo({
   selectedPeriod: string;
 }): StatesResponse {
   const stateInfo = tableData.find(
-    (state) => state.estado__sigla === feature.properties.sigla
+    (state) =>
+      state.estado__sigla === feature.properties.sigla &&
+      state.periodo === selectedPeriod
   );
   const stateWithOrgaosWithinPeriod = {
     ...stateInfo,
