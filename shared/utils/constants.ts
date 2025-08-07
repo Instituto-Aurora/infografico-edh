@@ -6,5 +6,5 @@ export const env: string =
 
 //export const AIRTABLE_PROD_VIEW_ID = "app8KjMHegoxFRjgU";
 export const AIRTABLE_PROD_VIEW_ID =
-  process.env.AIRTABLE_PROD_VIEW_ID || "app8KjMHegoxFRjgU";
+  process.env.AIRTABLE_PROD_VIEW_ID || "appkzRAtPnCzMdeKB";
 export const AIRTABLE_STG_VIEW_ID = "appkzRAtPnCzMdeKB";
