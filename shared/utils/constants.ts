@@ -3,7 +3,7 @@ export const IS_IN_MAINTENANCE: boolean =
 
 export const env: string =
   process.env.NEXT_PUBLIC_VERCEL_ENV || process.env.NODE_ENV || "development";
-
+//test
 ///export const AIRTABLE_PROD_VIEW_ID = "app8KjMHegoxFRjgU";
 export const AIRTABLE_PROD_VIEW_ID = process.env.AIRTABLE_PROD_VIEW_ID;
 export const AIRTABLE_STG_VIEW_ID = "appkzRAtPnCzMdeKB";
