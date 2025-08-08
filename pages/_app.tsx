@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { ChakraProvider, extendTheme, VStack } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme, VStack, Flex } from "@chakra-ui/react";
 import { SWRConfig } from "swr";
 import { appWithTranslation } from "next-i18next";
 export { reportWebVitals } from "next-axiom";
@@ -16,6 +16,8 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/700.css";
 
+import LanguageSwitcher from "../shared/components/LanguageSwitcher"; // caminho ajustado
+
 const theme = extendTheme(customTheme);
 
 function App({ Component, pageProps }: AppProps) {
@@ -24,6 +26,12 @@ function App({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={theme}>
         <SWRConfig value={{ fetcher }}>
           <Header />
+
+          {/* Botão de troca de idioma no topo da página */}
+          <Flex justify="flex-end" w="full" px={{ base: 10, xl: 24 }} mt={2}>
+            <LanguageSwitcher />
+          </Flex>
+
           <VStack
             maxWidth="100vw"
             minHeight="calc(100vh - 7.5rem - 25rem)"
@@ -36,6 +44,7 @@ function App({ Component, pageProps }: AppProps) {
           >
             <Component {...pageProps} />
           </VStack>
+
           <Footer />
         </SWRConfig>
       </ChakraProvider>

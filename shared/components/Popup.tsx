@@ -38,14 +38,20 @@ const POPUP_ITEMS = (
     status: stateInfo.estado_basico__orgao_publico,
     category: t("category.govern"),
   },
+  {
+    status: stateInfo.estado_basico__transparencia,
+    category: t("category.transparency"),
+  },
 ];
 
 export function PopupContent({
   label,
   stateInfo,
+  selectedPeriod,
 }: {
   label: string;
   stateInfo?: StatesResponse;
+  selectedPeriod: string;
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation("home");
@@ -118,7 +124,12 @@ export function PopupContent({
           </List>
         </Box>
       </Box>
-      <ExpandedPopup onClose={onClose} isOpen={isOpen} stateInfo={stateInfo} />
+      <ExpandedPopup
+        onClose={onClose}
+        isOpen={isOpen}
+        stateInfo={stateInfo}
+        selectedPeriod={selectedPeriod}
+      />
     </>
   );
 }

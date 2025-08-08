@@ -40,6 +40,11 @@ const ICON_ITEMS = (
     status: stateInfo.estado_basico__orgao_publico,
     MainIcon: DocumentTextIcon,
   },
+  {
+    label: t("category.transparency"),
+    status: stateInfo.estado_basico__transparencia,
+    MainIcon: DocumentTextIcon,
+  },
 ];
 export default function StateInfo({
   stateInfo,
@@ -57,7 +62,13 @@ export default function StateInfo({
 
   return (
     <VStack spacing={8} overflow={"hidden"}>
-      <HStack justify={"space-around"} color={"brand.primary"} spacing={16}>
+      <HStack
+        justify={"space-around"}
+        color={"brand.primary"}
+        w="full"
+        spacing={4}
+        flexWrap="nowrap"
+      >
         {ICON_ITEMS(t, stateInfo).map(
           ({ label, status, documentName, collegiateName, MainIcon }) => (
             <IconWithEmoji

@@ -19,18 +19,22 @@ export default function ExpandedPopup({
   onClose,
   isOpen,
   stateInfo,
+  selectedPeriod,
 }: {
   onClose: () => void;
   isOpen: boolean;
   stateInfo?: StatesResponse;
+  selectedPeriod: string;
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   if (!stateInfo) {
     return null;
   }
-
-  const degree = stateInfo.estado_basico__grau_institucionalizacao;
+  const periodData = stateInfo.periodo === selectedPeriod ? stateInfo : null;
+  const degree = periodData
+    ? periodData.estado_basico__grau_institucionalizacao
+    : stateInfo.estado_basico__grau_institucionalizacao;
   const gradient = INFO_ACCESS[degree];
 
   return (

@@ -45,19 +45,34 @@ async function fetchTable(endpoint: string) {
     headers: {
       Authorization: `Bearer ${token}`,
     },
-    isExternal: true,
   };
 
-  const data = await fetcher(endpoint, opts);
+  let allRecords: Records[] = [];
+  let offset: string | undefined = undefined;
 
-  return parse(data);
+  do {
+    const url = new URL(endpoint);
+    if (offset) {
+      url.searchParams.append("offset", offset);
+    }
+
+    const res = await fetch(url.toString(), {
+      headers: opts.headers,
+    });
+    const data = await res.json();
+
+    allRecords = allRecords.concat(data.records);
+    offset = data.offset;
+  } while (offset);
+
+  return parse({ records: allRecords });
 }
 
 function getEndpoint(tableName: string, lng: string | string[]) {
   const tableId =
     env !== "production" ? AIRTABLE_STG_VIEW_ID : AIRTABLE_PROD_VIEW_ID;
 
-  return `https://api.airtable.com/v0/${tableId}/${tableName}__${lng}?maxRecords=100&view=Grid%20view`;
+  return `https://api.airtable.com/v0/${tableId}/${tableName}__${lng}?maxRecords=200&view=Grid%20view`;
 }
 
 export default async function handler(

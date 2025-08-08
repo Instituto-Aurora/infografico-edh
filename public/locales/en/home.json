@@ -16,7 +16,8 @@
   "category": {
     "document": "Guiding document",
     "collegiate": "HRE collegiate body",
-    "govern": "HRE government department"
+    "govern": "HRE government department",
+    "transparency": "Information transparency"
   },
   "popup": {
     "expanded": {
@@ -53,12 +54,15 @@
   "accessLink": "acess the link.",
   "methodologyPopup": {
     "title": "Methodology",
-    "description": "To outline the overview of Human Rights Education (HRE) in Brazil, the research was divided into two stages. In the first stage, we sought to understand the institutionalization of HRE at the federal level, using information from the ministries responsible for HRE. In the second stage, we analyzed the Brazilian states to assess the extent to which HRE is institutionalized in each location. Data were collected biennially (2019–2020, 2021–2022, 2023–2024, and so on). The research was conducted through interviews and information obtained from official websites, emails, phone calls, and freedom of information requests — in accordance with Law No. 12.527/11. For detailed data on each state,",
-    "link": "download the materials at the link."
+    "description": "To outline the overview of Human Rights Education (HRE) in Brazil, we gathered information from the federal ministries responsible for HRE and analyzed each of the states and the Federal District to understand the extent to which HRE has been institutionalized across the country. The information on the degrees of institutionalization shown in the interactive map—such as the existence of guiding documents, collegiate bodies, and government agencies dedicated to HRE—was collected biennially (in 2019–2020, 2021–2022, 2023–2024, and so on). The detailed data available when clicking on each state—such as budget, definitions, thematic focuses, etc.—was collected every four years, at the end of each government’s term (in 2022, 2024, and so on). The research was conducted through interviews and information made available on official websites, via email, by phone, and through freedom of information requests, in accordance with Law No. 12.527/11. It is important to note that the research methodology has been improved with each edition. Therefore, variations in the degree of institutionalization over the biennia do not necessarily reflect the advancement of HRE public policy, but rather improvements in the data collection tools used by Aurora Institute. For detailed information on each state and a full description of the methodologies employed,",
+    "link": "download the materials from the link."
   },
   "comparison": {
     "title": "Comparison of Human Rights Education between states",
     "subtitle": "Select 2 or 3 states to compare; then choose which parameters to compare.",
+    "selectedPeriod": "Selected analysis period:",
+    "quadrenniumRule": "The comparative indicators table is available only for the last two years of each quadrennium.",
+    "quadrennium": "Current quadrennium:",
     "select": {
       "placeholder": "Add a state"
     },
