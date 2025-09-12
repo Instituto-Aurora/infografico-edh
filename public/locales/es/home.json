@@ -11,7 +11,7 @@
     "medium": "Medio",
     "low": "Bajo",
     "none": "Ninguno",
-    "no_info": "No se pudo verificar"
+    "no_info": "No se ha podido verificar"
   },
   "category": {
     "document": "Documento guía",
@@ -54,7 +54,7 @@
   "accessLink": "acceda al enlace.",
   "methodologyPopup": {
     "title": "Metodología",
-    "description": "Para trazar el panorama de la política pública de Educación en Derechos Humanos (EDH) en Brasil, recopilamos información de los ministerios responsables por la EDH y analizamos cada uno de los estados y el Distrito Federal para comprender en qué medida la EDH está institucionalizada en el país. La información sobre los grados de institucionalización presentada en el mapa interactivo —como la existencia de documentos orientadores, órganos colegiados y organismos gubernamentales dedicados a la EDH— fue recolectada de forma bienal (en 2019-2020, 2021- 2022, 2023-2024 y así sucesivamente). Los datos detallados que se muestran al hacer clic en los estados — presupuesto, definiciones, temas, etc.— fueron recolectados cada cuatro años, al final del período de mandato de los gobiernos vigentes (en 2022, 2024, y así en adelante). La investigación se realizó mediante entrevistas e información disponible en sitios web oficiales, por correo electrónico, por teléfono y a través de solicitudes de acceso a la información, de acuerdo con la Ley N.º 12.527/11. Cabe destacar que la metodología de la investigación ha sido perfeccionada en cada edición y, por lo tanto, a lo largo de los bienios, existen variaciones en el grado de institucionalización que no implican necesariamente un avance en la política pública de EDH, sino una mejora en los instrumentos de recolección de datos utilizados por el Instituto Aurora. Para acceder a los datos detallados de cada estado y a una descripción completa de las metodologías utilizadas,",
+    "description": "Para esbozar el panorama de la política pública de Educación en Derechos Humanos (EDH) en Brasil, recopilamos información de los ministerios responsables por la EDH y analizamos cada uno de los estados y el Distrito Federal para comprender en qué medida la EDH está institucionalizada en el país. La información sobre los grados de institucionalización presentada en el mapa interactivo —como la existencia de documentos de orientación, órganos colegiados y órganos gubernamentales dedicados a la EDH— fue recolectada de forma bienal (en 2019-2020, 2021-2022, 2023-2024 y así sucesivamente). Los datos detallados que se muestran al hacer clic en los estados — presupuesto, definiciones, temas, etc.— fueron recolectados cada cuatro años, al final del período de mandato de los gobiernos vigentes (en 2022, 2024, y así en adelante). La investigación se realizó mediante entrevistas e información disponible en sitios web oficiales, por correo electrónico, por teléfono y a través de solicitudes de acceso a la información, de acuerdo con la Ley N.º 12.527/11. Destacamos que la metodología de la investigación ha sido perfeccionada en cada edición y, por lo tanto, a lo largo de los bienios, existen variaciones en el grado de institucionalización que no implican necesariamente un avance en la política pública de EDH, sino una mejora en los instrumentos de recolección de datos utilizados por el Instituto Aurora. Para acceder a los datos detallados de cada estado y a una descripción completa de las metodologías utilizadas,",
     "link": "descargue los materiales en el enlace indicado."
   },
   "comparison": {
